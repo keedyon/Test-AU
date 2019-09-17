@@ -1,0 +1,28 @@
+
+name: /report_v2/listen_duration
+request:
+    headers:
+        user-agent: Wood%2F3.0.1%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        cookie: '{"gender_version":1,"pro_cate_id":1,"user_interest":[]}'
+        device_id: $device_id
+        is_listen_complete: '0'
+        listen_duration: '26'
+        pcid: $pcid
+        phone_sn: $phone_sn
+        refer_id: '197955'
+        refer_type: broadcast
+        user_agent: $user_agent
+        version: $version
+    url: https://sindar.ixiaolu.com/report_v2/listen_duration
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0

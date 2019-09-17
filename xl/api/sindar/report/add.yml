@@ -1,0 +1,31 @@
+
+name: /report/add
+request:
+    headers:
+        user-agent: Wood%2F3.0.0_beta10%28360%3B360%3B1603-A03%3B6.0%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        cookie: '{"gender_version":1,"pro_cate_id":2,"user_interest":[]}'
+        device_id: $device_id
+        feed_content_type: ''
+        feed_id: '1908091444204149459'
+        login_user_id: $account_name
+        pcid: $pcid
+        phone_sn: $phone_sn
+        remark: gggg
+        report_type: '21'
+        session_id: $session_id
+        user_agent: $user_agent
+        user_id: '0'
+        version: $version
+    url: https://sindar.ixiaolu.com/report/add
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0

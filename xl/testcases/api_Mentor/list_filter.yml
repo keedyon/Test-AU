@@ -1,0 +1,5 @@
+- config:
+    name: 咨询师页面，分类列表下的数据 筛选项
+- test:
+    name: /Mentor/list
+    api: api/api/Mentor/list_filter.yml

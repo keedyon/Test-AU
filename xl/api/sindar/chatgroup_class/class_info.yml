@@ -1,0 +1,27 @@
+
+name: /chatgroup_class/class_info
+request:
+    headers:
+        user-agent: Wood%2F3.0.1%28Meizu%3BMeizu%3BM5s%3B6.0%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        chatgroup_id: '203187174554730920'
+        cookie: $cookie
+        device_id: $device_id
+        login_user_id: $account_name
+        pcid: $pcid
+        phone_sn: $phone_sn
+        session_id: $session_id
+        user_agent: $user_agent
+        version: $version
+    url: https://sindar.ixiaolu.com/chatgroup_class/class_info
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0

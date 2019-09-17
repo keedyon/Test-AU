@@ -1,0 +1,30 @@
+
+name: /mentor/copy_weixin
+request:
+    data: ''
+    headers:
+        user-agent: Wood%2F3.0.0%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: POST
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        cookie: '{"gender_version":1,"pro_cate_id":54,"user_interest":[]}'
+        device_id: $device_id
+        login_user_id: $account_name
+        mentor_id: '17760893'
+        pcid: $pcid
+        phone_sn: $phone_sn
+        send_im: '1'
+        send_im_mp: 'true'
+        session_id: $session_id
+        user_agent: $user_agent
+        version: $version
+    url: https://sindar.ixiaolu.com/mentor/copy_weixin
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0

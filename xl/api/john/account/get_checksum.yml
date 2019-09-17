@@ -1,0 +1,24 @@
+name: /account/get_checksum
+request:
+    headers:
+        user-agent: Wood%2F3.0.0%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        account_name: $account_name
+        app_channel: $app_channel
+        cookie: $cookie
+        device_id: $device_id
+        pcid: $pcid
+        phone_sn: $phone_sn
+        user_agent: $user_agent
+        version: $version
+    url: https://john.ixiaolu.com/account/get_checksum
+extract:
+    checksum: content.data.checksum
+validate:
+-   eq: [status_code,200]
+-   eq: [content.rtn,0]
+
+
+

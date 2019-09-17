@@ -1,0 +1,28 @@
+
+name: /broadcast/room_info
+request:
+    headers:
+        user-agent: Wood%2F3.0.0%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        broadcast_id: '195396'
+        cookie: $cookie
+        device_id: $device_id
+        pcid: $pcid
+        phone_sn: $phone_sn
+        room_id: ''
+        user_agent: $user_agent
+        version: $version
+    url: https://sindar.ixiaolu.com/broadcast/room_info
+extract:
+    subject: content.data.room.subject
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0

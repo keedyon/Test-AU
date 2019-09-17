@@ -1,0 +1,17 @@
+
+
+- config:
+    name: 第三屏，进入到明星团队列表，列表下的数据
+    variables:
+        original_password: '111111'
+- test:
+    name: get_checksum
+    api: api/john/account/get_checksum.yml
+
+- test:
+    name: do_login
+    api: api/john/account/login.yml
+
+- test:
+    name: /StarMentorPro/rank
+    api: api/api/StarMentorPro/rank.yml

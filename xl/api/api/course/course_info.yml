@@ -1,0 +1,32 @@
+
+name: /Course/course_info
+request:
+    headers:
+        User-Agent: Mozilla/5.0 (Linux; Android 6.0; 1603-A03 Build/MRA58K; wv)
+            AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/48.0.2564.95
+            Mobile Safari/537.36 xiaolu_3.0.0_beta10 screen-size:1080*1920
+        X-Requested-With: com.mei.wood
+    method: GET
+    params:
+        _: '1565683752279'
+        ab_ver: B
+        app_channel: other
+        callback: Zepto1565683751986
+        client_type: android
+        cookie: '{"gender_version":1,"pro_cate_id":2,"user_interest":[]}'
+        course_id: '885'
+        login_user_id: '0'
+        phone_sn: '99000821241966'
+        push_client_id: 8b690c9cf0273049c09ff9f74c252663
+        session_id: 'null'
+        type: detail
+        user_agent: ' xiaolu_'
+        version: 3.0.0_beta10
+    url: https://api.ixiaolu.com/Course/course_info
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - headers.Content-Type
+    - text/html; charset=UTF-8

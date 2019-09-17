@@ -1,0 +1,29 @@
+
+name: /audio_fav/mark
+request:
+    headers:
+        user-agent: Wood%2F3.0.0_beta10%28360%3B360%3B1603-A03%3B6.0%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        audio_id: '420'
+        audio_type: audio_featured
+        cookie: $cookie
+        device_id: $device_id
+        is_fav: '1'
+        login_user_id: $account_name
+        pcid: $pcid
+        phone_sn: $phone_sn
+        session_id: $session_id
+        user_agent: $user_agent
+        version: $version
+    url: https://sindar.ixiaolu.com/audio_fav/mark
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0

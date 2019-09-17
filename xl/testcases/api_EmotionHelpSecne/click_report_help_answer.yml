@@ -1,0 +1,18 @@
+
+
+
+- config:
+    name: 求助卡页面，点击向他求助跳转页面
+    variables:
+        original_password: '111111'
+- test:
+    name: get_checksum
+    api: api/john/account/get_checksum.yml
+
+- test:
+    name: do_login
+    api: api/john/account/login.yml
+
+- test:
+    name: /EmotionHelpScene/click_report
+    api: api/api/EmotionHelpSecne/click_report_help_answer.yml

@@ -1,0 +1,27 @@
+
+name: /user_profile/info_chat
+request:
+    headers:
+        user-agent: Wood%2F3.0.1%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        cookie: '{"gender_version":1,"pro_cate_id":1,"user_interest":[]}'
+        device_id: $device_id
+        login_user_id: $account_name
+        pcid: $pcid
+        phone_sn: $phone_sn
+        session_id: $session_id
+        user_agent: $user_agent
+        user_id: '18740603'
+        version: $version
+    url: https://sindar.ixiaolu.com/user_profile/info_chat
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0

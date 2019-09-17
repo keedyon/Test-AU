@@ -1,0 +1,7 @@
+- config:
+    name: 咨询师页面，分类列表下的数据 按销量排序
+
+
+- test:
+    name: /Mentor/list
+    api: api/api/Mentor/list_sales.yml

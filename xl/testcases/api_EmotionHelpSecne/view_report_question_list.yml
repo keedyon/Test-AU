@@ -1,0 +1,16 @@
+
+- config:
+    name: 第三屏，情感求助模块进入到问题列表
+    variables:
+        original_password: '111111'
+- test:
+    name: get_checksum
+    api: api/john/account/get_checksum.yml
+
+- test:
+    name: do_login
+    api: api/john/account/login.yml
+
+- test:
+    name: /EmotionHelpScene/view_report
+    api: api/api/EmotionHelpSecne/view_report_question_list.yml

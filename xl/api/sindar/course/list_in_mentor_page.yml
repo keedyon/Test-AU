@@ -1,0 +1,27 @@
+
+name: /course/list_in_mentor_page
+request:
+    headers:
+        user-agent: Wood%2F3.0.1_beta3%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        cookie: '{"gender_version":0,"pro_cate_id":5,"user_interest":[]}'
+        device_id: $device_id
+        login_user_id: $account_name
+        mentor_user_id: '15180276'
+        pcid: $pcid
+        phone_sn: $phone_sn
+        session_id: $session_id
+        user_agent: $user_agent
+        version: $version
+    url: https://sindar.ixiaolu.com/course/list_in_mentor_page
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0

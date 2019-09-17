@@ -1,0 +1,6 @@
+- config:
+    name: 咨询师页面，证书数据
+
+- test:
+    name: /Mentor/certificate_list
+    api: api/api/Mentor/certificate_list.yml

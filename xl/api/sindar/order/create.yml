@@ -1,0 +1,39 @@
+
+name: /order/create
+request:
+    data:
+        is_split: 'false'
+        package_course_ids: ''
+        pay_type: wxpay
+        phone_no: 86-1880000192
+        promoter_user_id: $promoter_user_id
+        refer: ''
+        refer_id: $course_id
+        refer_route: TabMainActivity|ImageCourseActivity|PayKtActivity
+        refer_type: course
+        spec_id: $spec_id
+        split_price: '0.05'
+    headers:
+        content-type: application/x-www-form-urlencoded
+        user-agent: Wood%2F3.1.0_beta9%28HUAWEI%3BHONOR%3BNEM-AL10%3B6.0%29+mdlclient+
+        version: $version
+    method: POST
+    params:
+        ab_ver: B
+        app_channel: $app_channel
+        cookie: '{"gender_version":1,"pro_cate_id":1,"user_interest":[]}'
+        device_id: $device_id
+        login_user_id: $account_name
+        pcid: $pcid
+        phone_sn: $phone_sn
+        session_id: $session_id
+        user_agent: $user_agent
+        version: $version
+    url: https://sindar.ixiaolu.com/order/create
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0

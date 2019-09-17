@@ -1,0 +1,30 @@
+
+name: /account/check_account_name
+request:
+    headers:
+        user-agent: Wood%2F3.2.0_beta7%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        account_name: 86-19926544022
+        app_channel: $app_channel
+        cookie: $cookie
+        device_id: $device_id
+        pcid: $pcid
+        phone_sn: $phone_sn
+        user_agent: $user_agent
+        version: $version
+    url: https://john.ixiaolu.com/account/check_account_name
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 20201
+-   eq:
+    - content.msg
+    - 用户尚未注册，请先注册
+-   eq:
+    - content.trace
+    - AccountCmd.check_account_name:220

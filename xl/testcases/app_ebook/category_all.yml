@@ -1,0 +1,24 @@
+- config:
+    name: 首页，进入秘籍首页
+    variables:
+        original_password: '111111'
+        account_name: '15492287'
+        app_channel: other
+        device_id: 183e76da7e250009a908de5e2de63a19
+        pcid: 183e76da7e250009a908de5e2de63a19
+        phone_sn: '865738037447389'
+        user_agent: 'Wood/3.0.0(Xiaomi;Xiaomi;Redmi 4X;6.0.1) mdlclient '
+        version: 3.0.0
+        cookie: '{"gender_version":1,"pro_cate_id":54,"user_interest":[]}'
+#        ab_ver: B
+- test:
+    name: get_checksum
+    api: api/john/account/get_checksum.yml
+
+- test:
+    name: do_login
+    api: api/john/account/login.yml
+
+- test:
+    name: /app_ebook/category_all
+    api: api/sindar/app_ebook/category_all.yml

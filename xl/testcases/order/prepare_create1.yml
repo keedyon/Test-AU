@@ -1,0 +1,9 @@
+- config:
+    name: 准备创建订单
+#- test:
+#    name: /course/info_v2
+#    api: api/sindar/course/info_v2.yml
+
+- test:
+    name: /order/prepare_create
+    api: api/sindar/order/prepare_create.yml

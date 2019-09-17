@@ -1,0 +1,28 @@
+
+name: /Mentor/pro_cate
+request:
+    headers:
+        User-Agent: Wood%2F3.0.1%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: 3.0.1
+    method: GET
+    params:
+        ab_ver: B
+        all: '1'
+        app_channel: other
+        cookie: '{"gender_version":1,"pro_cate_id":2,"user_interest":[]}'
+        device_id: '865738037447389'
+        login_user_id: '15492287'
+        mentor_gender_version: '-1'
+        pcid: 183e76da7e250009a908de5e2de63a19
+        phone_sn: '865738037447389'
+        session_id: $session_id
+        user_agent: 'Wood/3.0.1(Xiaomi;Xiaomi;Redmi 4X;6.0.1) mdlclient '
+        version: 3.0.1
+    url: http://api.ixiaolu.com/Mentor/pro_cate
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - headers.Content-Type
+    - text/html; charset=UTF-8

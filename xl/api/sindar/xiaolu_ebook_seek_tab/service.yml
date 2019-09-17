@@ -1,0 +1,26 @@
+name: /xiaolu_ebook_seek_tab/service
+request:
+    headers:
+        user-agent: Wood%2F3.0.0%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        cookie: '{"gender_version":1,"pro_cate_id":54,"user_interest":[]}'
+        device_id: $device_id
+        login_user_id: $account_name
+        mentor_gender_version: '-1'
+        pcid: $pcid
+        phone_sn: $phone_sn
+        session_id: $session_id
+        user_agent: $user_agent
+        version: $version
+    url: https://sindar.ixiaolu.com/xiaolu_ebook_seek_tab/service
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0

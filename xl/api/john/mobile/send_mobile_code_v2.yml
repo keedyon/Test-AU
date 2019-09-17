@@ -1,0 +1,34 @@
+
+name: /mobile/send_mobile_code_v2
+request:
+    headers:
+        user-agent: Wood%2F3.2.0_beta7%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        app_channel: $app_channel
+        captcha: ''
+        cookie: $cookie
+        device_id: $device_id
+        mobile_code_next: logined_or_register_with_phone_no
+        pcid: $pcid
+        phone_no: 86-19926544022
+        phone_sn: $phone_sn
+        token: ''
+        user_agent: $user_agent
+        version: $version
+    url: https://john.ixiaolu.com/mobile/send_mobile_code_v2
+extract:
+#    session_id: content.data.session_id
+    token: content.data.token
+    url: content.data.url
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 10402
+-   eq:
+    - content.msg
+    - 请输入图片验证码

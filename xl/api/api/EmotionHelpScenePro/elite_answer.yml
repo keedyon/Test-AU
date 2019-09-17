@@ -1,0 +1,22 @@
+
+name: /EmotionHelpScenePro/elite_answer
+request:
+    headers:
+        user-agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4X Build/MMB29M;
+            wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/55.0.2883.91
+            Mobile Safari/537.36 xiaolu_3.0.1_beta3 screen-size:720*1280
+        x-requested-with: com.mei.wood
+    method: GET
+    params:
+        _: '1566552005345'
+        callback: jQuery331019552173367151227_1566552005344
+        cookie: '{"gender_version":1,"pro_cate_id":2,"user_interest":[]}'
+        login_user_id: '15492287'
+        next_start_key: '0'
+        pro_cate_id: '2'
+        session_id: $session_id
+    url: https://api.ixiaolu.com/EmotionHelpScenePro/elite_answer
+validate:
+-   eq:
+    - status_code
+    - 200

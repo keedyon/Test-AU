@@ -1,0 +1,40 @@
+
+config:
+    name: "创建一个订单"
+    variables:
+      original_password: '111111'
+      account_name: '15492287'
+      app_channel: other
+      device_id: 183e76da7e250009a908de5e2de63a19
+      pcid: 183e76da7e250009a908de5e2de63a19
+      phone_sn: '865738037447389'
+      user_agent: 'Wood/3.0.0(Xiaomi;Xiaomi;Redmi 4X;6.0.1) mdlclient '
+      version: 3.0.0
+      session_id: 'null'
+      ab_ver: B
+
+testcases:
+#    create user's account.:
+#        testcase: testcases/account/login.yml
+
+#    get course_id/refer_id.:
+#        testcase: testcases/course/info_v2.yml
+
+#    prepare create courese.:
+#        testcase: testcases/order/prepare_create.yml
+#        variables:
+#            promoter_user_id: 7531897
+#            mentor_user_id: 7531897
+#            refer_id: 463
+#            spec_id: 0
+
+
+
+    create course_id.:
+        testcase: testcases/order/create.yml
+
+
+
+
+
+

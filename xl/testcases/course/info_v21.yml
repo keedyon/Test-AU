@@ -1,0 +1,5 @@
+- config:
+    name: 课程详情页
+- test:
+    name: /course/info_v2
+    api: api/sindar/course/info_v2.yml

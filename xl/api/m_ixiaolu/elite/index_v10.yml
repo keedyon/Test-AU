@@ -1,0 +1,568 @@
+
+name: /elite/index_v10
+request:
+    headers:
+        user-agent: Wood%2F3.0.0%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        client_type: android
+        cookie: $cookie
+        device_id: $device_id
+        feed_id: $feed_id
+        from: $from
+        json: '1'
+        pcid: $pcid
+        phone_sn: $phone_sn
+        push_client_id: 183e76da7e250009a908de5e2de63a19
+        survey_msg_id: ''
+        user_agent: $user_agent
+        version: $version
+    url: https://m.ixiaolu.com/elite/index_v10
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.body
+    - "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\"\
+        >\n\t<meta name=\"viewport\" content=\"width=device-width, minimum-scale=1.0,\
+        \ maximum-scale=1.0, user-scalable=no\">\n\t<meta name=\"format-detection\"\
+        \ content=\"telephone=no\" />\n\t<meta name=\"format-detection\" content=\"\
+        email=no\" />\n\t<meta name=\"keywords\" content=\"坏男孩\" />\n\t<meta name=\"\
+        description\" content=\"坏男孩\" />\n\t<meta name=\"author\" content=\"linzishuang\"\
+        >\n\t<title>一字一句教你聊天，快速把女孩子聊“嗨”起来</title>\n\t\t<!-- 图片预加载 start-->\n\t\
+        <link rel=\"prefetch\" href=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/like_on.png\"\
+        >\n\t<link rel=\"prefetch\" href=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/like.png\"\
+        >\n\t<link rel=\"prefetch\" href=\"//valar.ixiaolu.com/h5/xiaolu/elite/img/wechat_icon.png\"\
+        >\n\t<link rel=\"prefetch\" href=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/not_fav_v7.png\"\
+        >\n\t<link rel=\"prefetch\" href=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/fav_v7.png\"\
+        >\n\t<!-- 图片预加载 end-->\n\t<script async src=\"//valar.ixiaolu.com/common/lib/growing-io.js\"\
+        ></script>\n\t<script>\n\t\tvar dw = document.documentElement.clientWidth;\n\
+        \t\tif(dw>750)dw = 750;\n\t\tdocument.documentElement.style.fontSize =\
+        \ dw / 7.5 + 'px';\n\t</script>\n\t<style type=\"text/css\">\n\t\t.blank_fff_40{height:\
+        \ 0.4rem;width: 100%;background: #fff}\n\t\t.c8{color:#c8c8c8}\n\n\t\t\
+        /*微信广告*/\n\t\t.wx_ad_box{display:-webkit-flex;display:flex;align-items:center;flex-direction:column;margin:.5rem\
+        \ 0;padding:.4rem 0;box-shadow:0 3px 10px rgba(0, 0, 0, 0.1);border-radius:.1rem;background:url(http://valar.ixiaolu.com/h5/hnh/elite/img/v9/wechat_bg.png)\
+        \ no-repeat;background-size:1.8rem;background-position:100% 100%}\n\t\t\
+        .wx_ad_box .wab_title{line-height:1;font-size:.3rem;color:#333}\n\t\t\
+        .wx_ad_box .wab_mentor{flex-direction:row;align-items:center;display:-webkit-flex;display:flex;font-size:.28rem;color:#9b9b9b;padding:.2rem\
+        \ 0 .3rem 0}\n\t\t.wx_ad_box .wab_mentor img{width:.3rem;border-radius:50%;margin-right:.1rem}\n\
+        \t\t.wx_ad_box .wab_btn{font-size:.24rem;color:#fff;background:#42bd56;height:.7rem;width:2.46rem;display:block;line-height:.7rem;text-align:center;border-radius:1rem}\n\
+        \n\t\t/*ab测 D版 顶部导师卡片*/\n\t\t.mentor_card_box_d{display:-webkit-flex;display:flex;align-items:center;justify-items:center;flex-direction:column;margin:.5rem\
+        \ .3rem 0 .3rem;padding:.8rem 0 .4rem 0;box-shadow:0 3px 10px rgba(0,\
+        \ 0, 0, 0.1);border-radius:.1rem;position:relative}\n\t\t.mentor_card_box_d.mcbd_signet{background:url(http://valar.ixiaolu.com/h5/hnh/elite/img/v9/signet_full_bg.png)\
+        \ no-repeat;background-size:1.9rem;background-position:96% 90%;}\n\t\t\
+        .mentor_card_box_d .mcbd_avatar{width:1.1rem;height:1.1rem;border-radius:50%;position:absolute;top:-.61rem;left:50%;margin-left:-.61rem;border:.06rem\
+        \ solid #fff;box-shadow:0 -3px 10px rgba(0, 0, 0, 0.1);}\n\t\t.mentor_card_box_d\
+        \ .mcbd_info_name{font-size:.28rem;color:#303030;font-weight:700}\n\t\t\
+        .mentor_card_box_d .mcbd_certify_box{font-size:.24rem;color:#9b9b9b;display:-webkit-flex;display:flex;flex-wrap:wrap;margin-top:.2rem}\n\
+        \t\t.mentor_card_box_d .mcbd_certify_box .mcbd_item{display:-webkit-flex;display:flex;align-items:flex-start;margin:0\
+        \ 0.5rem}\n\t\t.mentor_card_box_d .mcbd_certify_box .mcbd_item img{width:.3rem;height:.27rem;margin-right:.1rem;margin-top:\
+        \ .04rem}\n\t\t.mentor_card_box_d .mcbd_certify_box .mcbd_item span{white-space:nowrap}\n\
+        \t\t.mentor_card_box_d .mcbd_certify_box .mcbd_item p{line-height: .36rem}\n\
+        \t\t.mentor_card_box_d .mcbd_info_num{font-size:.24rem;color:#ffa000;margin-top:.3rem}\n\
+        \t\t.mentor_card_box_d .mcbd_info_num .mcbd_follow_num{margin-right:.3rem}\n\
+        \t\t.mentor_card_box_d .mcbd_info_num .mcbd_follow_num em{color:#9b9b9b;font-style:normal}\n\
+        \t\t.mentor_card_box_d .mcbd_info_num span em{color:#9b9b9b;font-style:normal;margin-right:.1rem}\n\
+        \t\t.mentor_card_box_d .mcbd_btn{width:2rem;height:.6rem;font-size:.24rem;color:#fff;background:#ffa000;line-height:.6rem;text-align:center;border-radius:1rem;margin-top:.4rem}\n\
+        \t</style>\n</head>\n<body>\n\t<div class=\"_title\">\n\t\t<span>一字一句教你聊天，快速把女孩子聊“嗨”起来</span>\n\
+        \t</div>\n\n\t<!-- 原版导师名字头像 start -->\n\t<div class=\"avatar_box js_mentor_jump\"\
+        >\n\t\t<a class=\"img_a\">\n\t\t\t<img src=\"https://reuel-tolkien.ixiaolu.com/avatar/13191242/11416363091487\"\
+        \ alt=\"\" class=\"_img\">\n\t\t\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/V_icon1.png\"\
+        \ alt=\"\" class=\"v\">\n\t\t\t\t\t</a>\n\t\t<div class=\"_name\">羽翼恋爱学</div>\n\
+        \t</div>\n\t<!-- 原版导师名字头像 end -->\n\n\t\n\t<div class=\"content_box\"\
+        \ id=\"content_box\">\n\t\t\t\t\t<!-- 封面图 start -->\n\t\t\t<img src=\"\
+        http://morgoth-aman.ixiaolu.com/elite/1907261237327985813/100008248.jpg\"\
+        \ alt=\"\" style=\"margin: 30px auto;\">\n\t\t\t<!-- 封面图 end -->\n\t\t\
+        \n\t\t<!-- 正文 start -->\n\t\t<p style=\"margin-left:0cm; margin-right:0cm\"\
+        ><img alt=\"image\" src=\"https://morgoth-aman.ixiaolu.com/etc/100003941.png?imageView2/2/w/640\"\
+        \ /></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\"\
+        >很多兄弟在和女孩子聊天时不论是开场还是话题，或者是升级关系都进行的一塌糊涂。像一个没头的苍蝇到处乱撞，这样的结果就导致妹子不爱和你聊天慢慢嗯啊哦冷淡你。很多的兄弟因为不会聊天，本来初期认识接触对他极大兴趣的妹子冷淡他，聊着聊着就不爱回复了，甚至说我们更适合做朋友发好人卡更严重的就拉黑。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#2f2f2f\"\
+        >那怎么做才能和女孩子聊</span></strong><strong><span style=\"color:#2f2f2f\">&ldquo;</span></strong><strong><span\
+        \ style=\"color:#2f2f2f\">嗨</span></strong><strong><span style=\"color:#2f2f2f\"\
+        >&rdquo;</span></strong><strong><span style=\"color:#2f2f2f\">起来，才能通过聊天让女孩子喜欢你呢？【慢慢看，重点在后面】</span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">首先给兄弟们做个简单的团队介绍：大家好</span>&nbsp;<span\
+        \ style=\"color:#2f2f2f\">，</span>&nbsp;<span style=\"color:#2f2f2f\"\
+        >我们是小鹿官方合作团队</span><span style=\"color:#2f2f2f\">--</span><span style=\"\
+        color:#2f2f2f\">羽翼团队，专注于情感教学</span><span style=\"color:#2f2f2f\">8</span><span\
+        \ style=\"color:#2f2f2f\">年。致力于为大家提供</span><strong><span style=\"color:#f39c12\"\
+        >如何聊天、狙击真命</span></strong><strong>&nbsp;</strong><strong><span style=\"\
+        color:#f39c12\">、挽回真爱</span></strong><span style=\"color:#2f2f2f\">的两性情感服务。值得强调的一点，针对</span><span\
+        \ style=\"color:#2f2f2f\">&ldquo;</span><span style=\"color:#2f2f2f\"\
+        >如何聊天</span><span style=\"color:#2f2f2f\">&rdquo;</span><span style=\"\
+        color:#2f2f2f\">和</span><span style=\"color:#2f2f2f\">&rdquo;</span><span\
+        \ style=\"color:#2f2f2f\">社交软件聊天</span><span style=\"color:#2f2f2f\">&rdquo;</span><span\
+        \ style=\"color:#2f2f2f\">这点，我们团队精心打造了【可复制聊天服务】，帮助你快速提升聊天水平。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\"><img\
+        \ alt=\"image\" src=\"https://morgoth-aman.ixiaolu.com/etc/100003950.jpg?imageView2/2/w/640\"\
+        \ /></span></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><strong><span style=\"\
+        color:#2f2f2f\">如果你想要变得会聊天，想要提升自己的聊天，提升自己的恋爱水平，直接获取我的微信，点击</span></strong><span\
+        \ class=\"get-wx hand_text\" onclick=\"add_wechat()\">获取微信号</span><strong><span\
+        \ style=\"color:#2f2f2f\">直接告诉羽哥你的情感问题！</span></strong></p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"margin-left:0cm;\
+        \ margin-right:0cm\"><strong><span style=\"color:#2f2f2f\">同时，我的微信朋友圈每天都会更新大量的聊天技巧和女孩子正确相处的技巧，也可以加上微信学习（如果出现添加不上微信的情况，也可点击我的头像与我私聊，将你的微信号直接发给羽哥，我来加你）</span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<div style=\"\
+        margin-left:0cm; margin-right:0cm\">&nbsp;</div>\r\n<p style=\"margin-left:0cm;\
+        \ margin-right:0cm\">&nbsp;</p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"\
+        ><span style=\"color:#2f2f2f\">OK</span><span style=\"color:#2f2f2f\"\
+        >，现在我们直接进入正题，让羽哥带领你慢慢颠覆你的三观，用心感受用聊天就能让女人爱上你的方法</span></p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"margin-left:0cm;\
+        \ margin-right:0cm\"><strong><span style=\"color:#2f2f2f\"><span style=\"\
+        background-color:#f39c12\">教学干货</span></span></strong></p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm; text-align:justify\">&nbsp;</p>\r\n\
+        <p style=\"margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">先看一张</span>，</span><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">前几天刚报名参加课程的兄弟的聊天截图，大致内容如下：</span></span>&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><img alt=\"image\" src=\"https://morgoth-aman.ixiaolu.com/etc/100003942.jpg?imageView2/2/w/640\"\
+        \ /></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\"\
+        >如果你的聊天跟上面这位兄弟的内容类似，那么请你立马停止聊天，因为你真的没有&ldquo;社交直觉&rdquo;</span><span style=\"\
+        color:#2f2f2f\">，可能很多兄弟们，在最开始都会或多或少的犯一些错误，但是这些错误并不可怕，可怕的是你还不知道自己正在犯错。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">上面聊天内容的错误在于：通过提问的方式和女生开启话题，不懂得延续话题。你以为可以通过询问的方式去了解女生，产生互动，但这是错误的思维方式。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">我非常理解这位兄弟的聊天方式，毕竟我们都会对喜欢人或事物而产生好奇，想要通过询问来了解。要知道，单靠了解对方并不能成功的追到她，只有你展现出你的价值，她才会被你吸引。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">正确跟女生聊天的方式是，把问女生的问题转换成一种有趣的形式。比如：你在干嘛？可以换成：</span><span\
+        \ style=\"color:#2f2f2f\">&ldquo;</span><span style=\"color:#2f2f2f\"\
+        >在干嘛呢，我猜你是不是在沙发上修毛腿</span><span style=\"color:#2f2f2f\">&rdquo;</span><span\
+        \ style=\"color:#2f2f2f\">？</span><strong><span style=\"color:#e74c3c\"\
+        >（假定女生在做事情）</span></strong></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"\
+        >&nbsp;</p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"><span style=\"\
+        color:#2f2f2f\">或者是：</span><span style=\"color:#2f2f2f\">&ldquo;</span><span\
+        \ style=\"color:#2f2f2f\">你在干嘛呢，突然觉得有点想你，本来觉得想人是件很无聊的事情，可是不知道为什么还是想你了</span><span\
+        \ style=\"color:#2f2f2f\">&rdquo;</span><span style=\"color:#2f2f2f\"\
+        >。</span><strong><span style=\"color:#e74c3c\">（展示对女生的兴趣）</span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">这样的开场白，是不是要比你直接问女生在干嘛要有意思多了？这样你才能跟其他男生产生差异，让女生感觉你很有意思。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm; text-align:justify\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><img alt=\"image\" src=\"\
+        https://morgoth-aman.ixiaolu.com/etc/100003943.jpg?imageView2/2/w/640\"\
+        \ /></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\"\
+        >那么除了开场白要精彩以外，你还需要在后面的聊天当中去展示自己的价值，来加强对女生的吸引力。当你的价值符合女生的要求时，她便会喜欢上你。我们先说，怎样通过聊天展示自己的价值。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"background-color:#f39c12\"\
+        ><span style=\"color:#2f2f2f\">通过聊天展示自己的价值</span></span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">女生会通过聊天中的四个方面去判断一个男人的价值，这个价值并不是我们说的多少金钱。这四个方面分别是框架、状态、系统、技巧。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">这里不得不提到</span><span\
+        \ style=\"color:#2f2f2f\">NLP</span><span style=\"color:#2f2f2f\">，在</span><span\
+        \ style=\"color:#2f2f2f\">NLP</span><span style=\"color:#2f2f2f\">神经程序语言学中，仅仅提到了框架和状态两个概念，在吸引妹子中，系统和技巧同样是重要的组成部分。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">那么，跟女生聊天的时候如何去展示自己的价值呢？我们从上面的聊天对话当中可以看出，这位兄弟并没有向女生传递任何个人价值，女生无法从他的语言中判断他的价值。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">而大部分女生又是处于被动社会伦理，她不会主动的去问你，所以就需要我们主动的向女生展示，但是你在展示自身价值的时候一定表现的自然，不要太直接或者是把自己吹上天，这样你同样会被女生</span><span\
+        \ style=\"color:#2f2f2f\">PASS</span><span style=\"color:#2f2f2f\">掉，要知道低调才是最牛逼的炫耀。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#2f2f2f\"\
+        >为了给大家快速学会聊天快速追到喜欢的人</span></strong><strong><span style=\"color:#e74c3c\"\
+        >，我给大家准备了一份礼物！我会精彩在微信的朋友圈里发很多有趣的聊天话题，和很多女生感兴趣的话题！</span></strong><strong><span\
+        \ style=\"color:#2f2f2f\">如果你不会聊天？聊天尴尬，找不到话题？你可以直接加上我的微信</span></strong><span\
+        \ class=\"get-wx hand_text\" onclick=\"add_wechat()\">获取微信号</span><strong><span\
+        \ style=\"color:#2f2f2f\">，在我微信的朋友圈里，你可以看到很多有趣的聊天话题和女生感兴趣的话题，我还会把我和美女的实战聊天案例发到我的微信的朋友圈里，给你们学习参考</span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm; text-align:center\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><strong><span style=\"\
+        background-color:#f39c12\"><span style=\"color:#2f2f2f\">接下来给大家展示一下具体内容</span></span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#e67e22\"\
+        >框架</span></strong><strong><span style=\"color:#e67e22\">:&nbsp;</span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">在</span><span\
+        \ style=\"color:#2f2f2f\">NLP</span><span style=\"color:#2f2f2f\">神经程序语言学中的解释：框架是指一个人言谈举止背后的潜台词，潜台词的强硬程度，直接等于框架的强弱程度。用更直白的话说，一个人妥协的难易程度就是框架。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><img alt=\"image\" src=\"https://morgoth-aman.ixiaolu.com/etc/100003944.jpg?imageView2/2/w/640\"\
+        \ /></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><strong><span style=\"\
+        background-color:white\"><span style=\"color:#3e3e3e\">举个例子：</span></span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">女：你给我发个红包呗。</span></span></p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">男：好啊，我又不是一个吝啬的人，但我想问你一个问题，你告诉我你的全名，我就发个红包给你。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">女</span><span\
+        \ style=\"background-color:white\"><span style=\"color:#3e3e3e\">生有时候喜欢向男生索取价值，但是你跟她刚认识没多久，所以你可能会感觉她的要求不合理，这个时候你应该以无需求的姿态合理的拒绝她，同时先让女生满足你的要求再去满足她的索取，这样就展现自己的框架和高价值，证明你不是一个随便就听话的男人。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">女：你为什么天天都找我？</span></span></p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">男：因为感觉你很有趣（喜欢你）</span></span></p>\r\n<p\
+        \ style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#2f2f2f\">相信大部分兄弟都被问过这个问题，并且在面对这个问题的时候，几乎都像上面一样别人问什么你回答什么。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#2f2f2f\">从逻辑角度出发，这就是男人典型的逻辑性思维，我非常理解你们想表达给女生自己的内心，但是这种聊天方式，未免有些软弱，会让女生觉得你很没有框架，女生这么问你其实就是一种测试，在测试你对她的状态。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#2f2f2f\">那有兄弟会说这不是个好事情吗，我直接说了正好顺水推舟了，表达爱意就能在一起了，可事实我想你们这样回答之后大部分是事与愿违吧，其实女生这么问你，意义可能是来证明自己的魅力，从你身上找到一种存在感而已，但对方知道底牌以后会觉得你没有任何意思了。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#2f2f2f\">换一种想法如果对方自尊心很强，很多男人都俯首称臣，就是在你面前，无法搞定你，那对方是不是征服欲就来了，这就是我们常说的不要进入女人的测试，让对方摸不透，不知道答案往往会加深吸引。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#2f2f2f\">我们的学员在面对这种问题的时候，一般会选择这样的做法：</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><img alt=\"image\" src=\"https://morgoth-aman.ixiaolu.com/etc/100003945.jpg?imageView2/2/w/640\"\
+        \ /></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">在女生测试你的时候不要掉入女生的</span></span><span style=\"\
+        background-color:white\"><span style=\"color:#3e3e3e\">&ldquo;</span></span><span\
+        \ style=\"background-color:white\"><span style=\"color:#3e3e3e\">陷阱</span></span><span\
+        \ style=\"background-color:white\"><span style=\"color:#3e3e3e\">&rdquo;</span></span><span\
+        \ style=\"background-color:white\"><span style=\"color:#3e3e3e\">里。但是，很多兄弟却没有这个意识，还是一如既往的往里钻，当你遇到这种情况的时候你要立马冷静下来，想着如何跳出女生问你的这个问题，并且，换成保持自己框架的回复方式，而不是顺着她的话题往下走，这就是</span></span><strong><span\
+        \ style=\"background-color:white\"><span style=\"color:#3e3e3e\">&ldquo;</span></span></strong><span\
+        \ style=\"background-color:white\"><span style=\"color:#3e3e3e\">跳跃性思维</span></span><strong><span\
+        \ style=\"background-color:white\"><span style=\"color:#3e3e3e\">&rdquo;</span></span></strong><span\
+        \ style=\"background-color:white\"><span style=\"color:#3e3e3e\">的核心。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">从上面的对话，我们可以直接看出跳跃性思维的用法，以及不断给女生制造好奇心，来引诱女生进入你框架的流程，如果你顺着女生的话题回复，会让女生觉得你的性格不够强硬，没有主见，缺少给女生一种安全感和带领能力。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">框架也是一种高价值的表现，你会发现，公司里的员工基本上都是绝对服从上司说的话，如果上司想要执行一个项目，那么基本上也没有人会出来反对，因为他懂的多，经验丰富。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#2f2f2f\">在女人面前有自己的思维和见解，学习一些女生不知道的东西并展示出来，坚持自己的底线和态度，再通过打压对方抬高自己，女生就会被你征服，这就是框架的重要性。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#2f2f2f\"\
+        >聊天的时候，通过简单的话题，找到合适的机会，快速推进两个人的关系</span></strong><strong><span style=\"\
+        color:#2f2f2f\">!</span></strong><strong><span style=\"color:#2f2f2f\"\
+        >这才是有效聊天！天天只会关心对方，一辈子你也追不到她！想到更多精彩的和女人聊天的聊天记录，你可以直接加我微信</span></strong><span\
+        \ class=\"get-wx hand_text\" onclick=\"add_wechat()\">获取微信号</span><strong><span\
+        \ style=\"color:#2f2f2f\">，我会精彩在我微信朋友圈发有一些我和美女的精彩聊天记录，</span></strong><strong><span\
+        \ style=\"color:#e74c3c\">里面有大量的聊天话题和女生感兴趣的话题</span></strong><strong><span\
+        \ style=\"color:#2f2f2f\">！加我微信看看高手是怎么跟女生聊天的，好好学习一下。</span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#e67e22\"\
+        >状态</span></strong><strong>&nbsp;</strong></p>\r\n<p style=\"margin-left:0cm;\
+        \ margin-right:0cm\">&nbsp;</p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"\
+        ><span style=\"background-color:white\"><span style=\"color:black\">状态的表现会通过你的语言，你的行为展示出来，这个也是女生通过观察，看你是否是一个符合她要求的男人。我们要知道妹子总会说我喜欢</span></span><span\
+        \ style=\"background-color:white\"><span style=\"color:black\">xxx</span></span><span\
+        \ style=\"background-color:white\"><span style=\"color:black\">，我喜欢个子高的，我喜欢穿白色衬衫好看的，这些都是妹子的标准。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:black\">但往往真正能吸引妹子的，是你的个性，当你有独特个性的时候，这就是一种跟钱无关的高价值。但是很多兄弟们在状态上，没有表现出自己的高价值，而是非常软弱，寻求对方意见等，不由自主的就暴露出自己的不自信，下面请看案例：</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm; text-align:justify\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><img alt=\"image\" src=\"\
+        https://morgoth-aman.ixiaolu.com/etc/100003946.jpg?imageView2/2/w/640\"\
+        \ /></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">通过上面的对话，我们可以看出男生没有自己的主见，一直征求女生的意见，这样就很明显的暴露出不够自信的状态，不敢替她做决定。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#3e3e3e\">其实本来就是一件很小的事情，</span></span><span style=\"\
+        background-color:white\"><span style=\"color:#2f2f2f\">如果你把它带回来再送给女生，告诉她不要那么粗心大意，弄丢了可就不好了。女生反而会感激你。</span></span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"background-color:white\"\
+        ><span style=\"color:#2f2f2f\">而你又可以借助这个机会说没关系，下次请我喝杯咖啡就行了，进行邀约。女生也会从另外一个角度，判断出你是一个很细心很体贴的男人。</span></span></p>\r\
+        \n<p style=\"margin-left:12.0pt; margin-right:12.0pt\">&nbsp;</p>\r\n\
+        <p style=\"margin-left:0cm; margin-right:0cm\"><strong><span style=\"\
+        color:#e67e22\">保持自我</span></strong></p>\r\n<p style=\"margin-left:0cm;\
+        \ margin-right:0cm\">&nbsp;</p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"\
+        ><span style=\"color:#2f2f2f\">可能，很多兄弟都被女生问过</span><span style=\"color:#2f2f2f\"\
+        >&ldquo;</span><span style=\"color:#2f2f2f\">你在套路我</span><span style=\"\
+        color:#2f2f2f\">&rdquo;</span><span style=\"color:#2f2f2f\">说明，我们在情感教育中学到的东西起了很大的效果。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">但是，很多兄弟误以为，女生背后的含义是你的套路被发现了，心里很虚，怕对方不喜欢自己，得失心又来了。便又恢复了以前的呆板聊天模式。结果还是被女生</span><span\
+        \ style=\"color:#2f2f2f\">PASS</span><span style=\"color:#2f2f2f\">，下面请看案例：</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><img alt=\"image\" src=\"https://morgoth-aman.ixiaolu.com/etc/100003947.jpg?imageView2/2/w/640\"\
+        \ /></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\"\
+        >女生会觉得本来还挺有趣的，怎么又要走心了呢，我跟你还不是很熟。其实在女生说第一句话的时候，她在内心里的想法是非常活跃和兴奋的，她可能是第一次遇到你这种很有趣的人，所以她才会冒出这句。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">这个时候很多兄弟肯定以为卧槽，是不是太过了，我还是收敛一点吧。然后转换了风格，但是女生却对你这个时候走心并不感冒，本来已经上去的情绪又掉入低谷。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">如果你在聊天中缺少了一致性的话，会让女生对你之前带给她的印象产生质疑，你并没有坚持自己的原则，一旦对方回馈你，你就因为对方的话发生改变。感觉自己现在聊天的对象和之前不一样，结果又回到了以前。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#2f2f2f\"\
+        >正确的聊天方式：</span></strong></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"\
+        >&nbsp;</p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"><img alt=\"\
+        image\" src=\"https://morgoth-aman.ixiaolu.com/etc/100003948.jpg?imageView2/2/w/640\"\
+        \ /></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"><img alt=\"\
+        image\" src=\"https://morgoth-aman.ixiaolu.com/etc/100003949.jpg?imageView2/2/w/640\"\
+        \ /></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><strong><span style=\"\
+        color:#2f2f2f\">当然关于更多聊天，如何提升自己的情商，让自己变得更加有魅力和吸引力，请</span></strong><strong><span\
+        \ style=\"color:#f39c12\">直接加羽哥的微信</span></strong><strong><span style=\"\
+        color:#2f2f2f\">，我们一对一告诉你怎么去做。当然也可以学习我微信朋友圈每天会更新的聊天技巧和正确和女孩子相处的方式，去提升你和女孩子相处、聊天的水平！</span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">这些技巧和方法，只是羽哥内部课程的一些最常用的技巧，也只是其中的冰山一角。可能你都闻所未闻，见所未见。但是这些都不重要，重要的你要来学习改变吗？</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#2f2f2f\"\
+        >这篇文章到了这里也完成了它的使命，如果，你想学习更快，更有效的拿下女神的方法，可以来加入我的内部课程。但是你现在应该知道了不会聊天是需要系统的学习的。如果，兄弟你不会聊天下定决心想要学习聊天了，直接获取羽哥的微信，点击</span></strong><span\
+        \ class=\"get-wx hand_text\" onclick=\"add_wechat()\">获取微信号</span><strong><span\
+        \ style=\"color:#2f2f2f\">直接和羽哥发</span></strong><strong><span style=\"\
+        color:#2f2f2f\">3</span></strong><strong><span style=\"color:#2f2f2f\"\
+        >个字</span></strong><strong><span style=\"color:#2f2f2f\">---</span></strong><strong><span\
+        \ style=\"color:#e74c3c\">我要学</span></strong><strong>&nbsp;</strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<div style=\"\
+        margin-left:0cm; margin-right:0cm; text-align:center\">\r\n<hr /></div>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#2f2f2f\"\
+        >如何提升</span></strong></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"\
+        >&nbsp;</p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"><span style=\"\
+        color:#2f2f2f\">兄弟，你能从开头一直看到这里，那么羽翼导师相信，你肯定是那种想要快速改变现状，快速提升自己的恋爱水平。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">也许你再也受不了和女孩子聊天总是聊死，也许你不想每次出去和女孩子约会都没有结果，也许你想提升自己、让自己变得更好。这些问题对于毫无恋爱经验的你来说，可能会很难。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">但是羽哥很负责的告诉你，通通不是问题，重要的你是否符合一下的三个条件：</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#2f2f2f\"\
+        >1.</span></strong><strong><span style=\"color:#2f2f2f\">你一定要下定决心去改变自己，让自己变得更好</span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><strong><span style=\"\
+        color:#2f2f2f\">2.</span></strong><strong><span style=\"color:#2f2f2f\"\
+        >愿意给自己投资，而不是只知道给女人花钱</span></strong></p>\r\n<p style=\"margin-left:0cm;\
+        \ margin-right:0cm\"><strong><span style=\"color:#2f2f2f\">3.</span></strong><strong><span\
+        \ style=\"color:#2f2f2f\">能够配合导师，有执行力，有行动力，而不是只会说不会做的</span></strong><strong><span\
+        \ style=\"color:#2f2f2f\">&ldquo;</span></strong><strong><span style=\"\
+        color:#2f2f2f\">嘴炮侠</span></strong><strong><span style=\"color:#2f2f2f\"\
+        >&rdquo;</span></strong></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"\
+        >&nbsp;</p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"><span style=\"\
+        color:#2f2f2f\">如果，你已经下定了决心，迫切的想要去改变现状，同时也愿意给自己投资，也能够积极配合导师，那么你就继续往下看。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">和女孩子交往其实是一件非常简单的事情，为什么呢？因为只要你是个正常人，能够有学习的能力，那你就能会恋爱；你只要学会恋爱技巧、学会和女孩子交往、提升自己的情商、提升自己的恋爱能力。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#2f2f2f\"\
+        >学员案例展示</span></strong></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"\
+        >&nbsp;</p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\"><img alt=\"\
+        image\" src=\"https://morgoth-aman.ixiaolu.com/etc/100003951.jpg?imageView2/2/w/640\"\
+        \ /></p>\r\n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><strong><span style=\"\
+        color:#2f2f2f\">疑问：经济能力不是很好有用吗？长得不帅有用吗？</span></strong></p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"margin-left:0cm;\
+        \ margin-right:0cm\"><strong><span style=\"color:#2f2f2f\">导师回答</span></strong><span\
+        \ style=\"color:#2f2f2f\">：只要你有正常的收入，而且愿意投资自己，说的再肤浅点，就是把之前给女人花的钱，拿了投资给自己就完全</span><span\
+        \ style=\"color:#2f2f2f\">OK</span><span style=\"color:#2f2f2f\">。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">男人和女人一样，只有懒男人，没有丑男人。不要总是给自己找借口，事实上，只要你能掌握方法，只要你能够下定决心想要学习，你依然可以得到你想要的结果。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">羽翼导师一个学员，他长得不高不帅，但是，选择了羽翼导师，在导师耐心的指导下，自己也主动配合以后，也是能够追到自己喜欢的女孩子的。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">做到让女人喜欢的是你这个人、对你不离不弃；而不是只是单纯的喜欢你的钱，当你落魄的时候就拍拍屁股走人；只有选择正确的方法，有专业的导师去帮你，才能达到你想要的结果。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<div style=\"\
+        margin-left:0cm; margin-right:0cm; text-align:center\">\r\n<hr /></div>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\"><strong><span style=\"\
+        color:#2f2f2f\"><span style=\"background-color:#f39c12\">开始改变</span></span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">其实兄弟们，和女人相处，不管是聊天还是约会都并不是什么难事！只要你掌握了正确的方法，有了专业的导师去帮你，那么你就可以随心所欲。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">不要担心你和女孩子聊天，女孩子突然不理你；不知道如何回复；和女孩子出去约会不知道去什么地方玩；以及不知道怎么和女生去升高关系，那是因为你根本没有系统的学习过。</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><strong><span style=\"color:#2f2f2f\"\
+        >羽哥希望我们因为恋爱这个话题认识，但是最后也会成为好朋友，乃至于兄弟！</span></strong></p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"margin-left:0cm;\
+        \ margin-right:0cm\"><strong><span style=\"color:#2f2f2f\">如果，大家也想快速提高自己的聊天水平，可以直接学习羽哥的聊天课程，点击</span></strong><span\
+        \ class=\"get-wx hand_text\" onclick=\"add_wechat()\">获取微信号</span><strong><span\
+        \ style=\"color:#2f2f2f\">加住羽哥微信后直接发</span></strong><strong><span style=\"\
+        color:#2f2f2f\">---</span></strong><strong><span style=\"color:#2f2f2f\"\
+        >我要改变。羽哥会给你进行全方位的情感分析，为你推荐适合的你的课程，教你通过聊天就追到自己喜欢的女人，追到喜欢的妹子，快速解决你的情感问题。</span></strong></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\r\n<p style=\"\
+        margin-left:0cm; margin-right:0cm\"><span style=\"color:#2f2f2f\">兄弟们，我是羽哥，我在内部课程等你！</span></p>\r\
+        \n<p style=\"margin-left:0cm; margin-right:0cm\">&nbsp;</p>\t\t<!-- 正文\
+        \ end -->\n\t</div>\n\n\t<div class=\"view_count\">7558人看过</div>\n\t\n\
+        \t<!-- 收藏/吐槽 start -->\n\t<div class=\"exp_box\">\n\t\t<div class=\"like_box\
+        \ \" id=\"like_box\">\n\t\t\t<div class=\"animated_num\" id=\"animated_num\"\
+        >+ 1</div>\n\t\t\t<div class=\"like_box_btn _circle \">\n\t\t\t\t<div\
+        \ class=\"icon_wrap transform_center\">\n\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/not_fav_v7.png\"\
+        \ alt=\"\" class=\"icon transform_center\">\n\t\t\t\t</div>\n\t\t\t</div>\n\
+        \t\t\t<div class=\"like_box_txt\">收藏(77)</div>\n\t\t</div>\n\t\t<div class=\"\
+        complain_box\" id=\"complain_box\">\n\t\t\t<div class=\"complain_box_btn\
+        \ _circle\">\n\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/complain_icon.png\"\
+        \ alt=\"\" class=\"icon transform_center\">\n\t\t\t</div>\n\t\t\t<div\
+        \ class=\"complain_box_txt\">吐槽</div>\n\t\t</div>\n\t</div>\n\t<!-- 收藏/吐槽\
+        \ end -->\n\n\n\t<!-- 底部导师卡片 start -->\n\n\t<div class=\"blank_10\"></div>\n\
+        \n\t<div class=\"common_box\" style=\"padding-bottom: 0.05rem;\"><div\
+        \ class=\"text\">内容来自</div></div>\n\n\t<div class=\"mentor_card_box_d\
+        \ mcbd_signet\">\n\t\t<img class=\"mcbd_avatar js_mentor_jump\" src=\"\
+        https://reuel-tolkien.ixiaolu.com/avatar/13191242/11416363091487\">\n\t\
+        \t<div class=\"mcbd_info_name\">\n\t\t\t羽翼恋爱学\t\t</div>\n\t\t\t\t\t<div\
+        \ class=\"mcbd_certify_box\">\n\t\t\t\t<div class=\"mcbd_item\">\n\t\t\
+        \t\t\t\t\t\t\t\t\t<img src=\"https://morgoth-aman.ixiaolu.com/etc/8739802\"\
+        >\t\t\t\t\t\t\t\t\t\t<p>高级婚姻家庭咨询师</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\
+        \t\t\t<div class=\"mcbd_info_num\">\n\t\t\t<span class=\"mcbd_follow_num\"\
+        >\n\t\t\t\t<em>被收藏</em>24.1W\t\t\t</span>\n\t\t\t<span class=\"mcbd_fans_num\"\
+        >\n\t\t\t\t<em>粉丝</em>15.8W\t\t\t</span>\n\t\t</div>\n\t\t\t\t<div class=\"\
+        mcbd_btn\">\n\t\t\t立即咨询\t\t</div>\n\t\t\t</div>\n\t<div class=\"blank_fff_40\"\
+        ></div>\n\t\n\t<!-- 底部导师卡片 end -->\n\n\t\t\t<!-- 干货推荐 start -->\n\t\t\
+        <div class=\"blank_10\"></div>\n\t\t<div class=\"common_box bb\"><div\
+        \ class=\"text\">咨询师相关</div></div>\n\t\t<div class=\"recommend_box\" id=\"\
+        recommend_box\">\n\t\t\t\t\t\t\t\t<div class=\"recommend_item\" feed_id=\"\
+        1905031554465748090\">\n\t\t\t\t\n\t\t\t\t<div class=\"recommend\" >\n\
+        \t\t\t\t\t<img class=\"feed_pic\" src=\"http://morgoth-aman.ixiaolu.com/elite/1905031554465748090/8945867\"\
+        >\n\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/play_icon_gray.png\"\
+        \ alt=\"\" class=\"play_pic transform_center hide\">\n\t\t\t\t</div>\n\
+        \t\t\t\n\t\t\t\t<div class=\"recommend_title\">“无限话题聊天”，轻松让妹子爱上你</div>\n\
+        \t\t\t\t<div class=\"ri_item_wrap\">\n\t\t\t\t\t<div class=\"ri_item\"\
+        >\n\t\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/fav_num_v7_new.png\"\
+        >\n\t\t\t\t\t\t<div>1758</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"\
+        ri_item\">\n\t\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/view_num_v7_new.png\"\
+        >\n\t\t\t\t\t\t<div>8.6W</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\
+        \t</div>\n\t\t\t\t\t\t\t\t<div class=\"recommend_item\" feed_id=\"1906251727586132496\"\
+        >\n\t\t\t\t\n\t\t\t\t<div class=\"recommend\" >\n\t\t\t\t\t<img class=\"\
+        feed_pic\" src=\"http://morgoth-aman.ixiaolu.com/elite/1906251727586132496/9038558.jpeg\"\
+        >\n\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/play_icon_gray.png\"\
+        \ alt=\"\" class=\"play_pic transform_center hide\">\n\t\t\t\t</div>\n\
+        \t\t\t\n\t\t\t\t<div class=\"recommend_title\">比“在干嘛”好用100倍的聊天话题！</div>\n\
+        \t\t\t\t<div class=\"ri_item_wrap\">\n\t\t\t\t\t<div class=\"ri_item\"\
+        >\n\t\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/fav_num_v7_new.png\"\
+        >\n\t\t\t\t\t\t<div>1019</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"\
+        ri_item\">\n\t\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/view_num_v7_new.png\"\
+        >\n\t\t\t\t\t\t<div>9.8W</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\
+        \t</div>\n\t\t\t\t\t\t\t\t<div class=\"recommend_item\" feed_id=\"1907121407279039905\"\
+        >\n\t\t\t\t\n\t\t\t\t<div class=\"recommend\" >\n\t\t\t\t\t<img class=\"\
+        feed_pic\" src=\"http://morgoth-aman.ixiaolu.com/elite/1907121407279039905/9074035.png\"\
+        >\n\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/play_icon_gray.png\"\
+        \ alt=\"\" class=\"play_pic transform_center hide\">\n\t\t\t\t</div>\n\
+        \t\t\t\n\t\t\t\t<div class=\"recommend_title\">一字一句教你聊天，快速把女孩子聊“嗨”起来</div>\n\
+        \t\t\t\t<div class=\"ri_item_wrap\">\n\t\t\t\t\t<div class=\"ri_item\"\
+        >\n\t\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/fav_num_v7_new.png\"\
+        >\n\t\t\t\t\t\t<div>581</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"\
+        ri_item\">\n\t\t\t\t\t\t<img src=\"//valar.ixiaolu.com/h5/hnh/elite/img/v7/view_num_v7_new.png\"\
+        >\n\t\t\t\t\t\t<div>5.7W</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\
+        \t</div>\n\t\t\t\t</div>\n\t\t<!-- 干货推荐 end -->\n\t\n\t\n\t<script>\n\t\
+        \tdocument.documentElement.style.fontSize = document.documentElement.clientWidth\
+        \ / 7.5 + 'px';\n\t</script>\n\t<style>\r\n\t/*toast*/\r\n\t#loadingToast\
+        \ ._mask_transparent{position:fixed;z-index:1000;top:0;right:0;left:0;bottom:0}\r\
+        \n\t#loadingToast ._toast{position:fixed;z-index:5000;width:7.6em;min-height:7.6em;top:180px;left:50%;margin-left:-3.8em;text-align:center;border-radius:5px;color:#FFF}\r\
+        \n\t#loadingToast ._loading{margin:30px 0 0;width:38px;height:38px;vertical-align:baseline;display:inline-block;-webkit-animation:weuiLoading\
+        \ 1s steps(12,end) infinite;animation:weuiLoading 1s steps(12,end) infinite;background:transparent\
+        \ url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAiIGhlaWdodD0iMTIwIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCI+PHBhdGggZmlsbD0ibm9uZSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTlFOUU5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMwKSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iIzk4OTY5NyIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgzMCAxMDUuOTggNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjOUI5OTlBIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDYwIDc1Ljk4IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0EzQTFBMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSg5MCA2NSA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNBQkE5QUEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoMTIwIDU4LjY2IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0IyQjJCMiIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgxNTAgNTQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjQkFCOEI5IiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKDE4MCA1MCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDMkMwQzEiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTE1MCA0NS45OCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNDQkNCQ0IiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTEyMCA0MS4zNCA2NSkiLz48cmVjdCB3aWR0aD0iNyIgaGVpZ2h0PSIyMCIgeD0iNDYuNSIgeT0iNDAiIGZpbGw9IiNEMkQyRDIiIHJ4PSI1IiByeT0iNSIgdHJhbnNmb3JtPSJyb3RhdGUoLTkwIDM1IDY1KSIvPjxyZWN0IHdpZHRoPSI3IiBoZWlnaHQ9IjIwIiB4PSI0Ni41IiB5PSI0MCIgZmlsbD0iI0RBREFEQSIgcng9IjUiIHJ5PSI1IiB0cmFuc2Zvcm09InJvdGF0ZSgtNjAgMjQuMDIgNjUpIi8+PHJlY3Qgd2lkdGg9IjciIGhlaWdodD0iMjAiIHg9IjQ2LjUiIHk9IjQwIiBmaWxsPSIjRTJFMkUyIiByeD0iNSIgcnk9IjUiIHRyYW5zZm9ybT0icm90YXRlKC0zMCAtNS45OCA2NSkiLz48L3N2Zz4=)\
+        \ no-repeat;background-size:100%}\r\n\t@-webkit-keyframes weuiLoading{0%{transform:rotate3d(0,0,1,0deg)}100%{transform:rotate3d(0,0,1,360deg)}}\r\
+        \n\t@keyframes weuiLoading{0%{transform:rotate3d(0,0,1,0deg)}100%{transform:rotate3d(0,0,1,360deg)}}\r\
+        \n\t#loadingToast ._toast_txt{margin:15px 0;color: #fff}\r\n</style>\r\
+        \n<!-- toast dom -->\r\n<div id=\"loadingToast\" class=\"hide\">\r\n \
+        \   <div class=\"_mask_transparent\"></div>\r\n    <div class=\"_toast\"\
+        >\r\n        <!-- <i class=\"_loading\"></i> -->\r\n    </div>\r\n</div>\t\
+        <script src=\"//valar.ixiaolu.com/common/lib/zepto.1.2.0.js\" type=\"\
+        text/javascript\"></script>\n\t<script src=\"//valar.ixiaolu.com/common/lib/lzs_func.js?v180628\"\
+        ></script>\n\t<!-- <script src=\"//valar.ixiaolu.com/h5/activity-entrance/js/entrance.js\"\
+        ></script> -->\n\t<script>\n\t\tvar add_wechat_href = 'aman://add_wechat_friend/13191242/elite/1907261237327985813';\n\
+        \t\tvar mentor_user_id = '13191242';\n\t\tvar login_user_id = \"0\";\n\
+        \t\tvar session_id = \"\";\n\t\tvar feed_id = \"1907261237327985813\"\
+        ;\n\t\tvar phone_sn = \"865738037447389\";\n\t\tvar mentor_has_weixin\
+        \ = 1;\n\t\tvar has_comment = 0;\n\t\tvar comment_has_more = 0;\n\t\t\
+        var comment_next_start = \"10\";\n\t\tvar default_face = \"https://morgoth-aman.ixiaolu.com/avatar\"\
+        ;\n\t\tvar is_js_run = false;\n\t\tvar param_get = {\"act\":\"elite\"\
+        ,\"op\":\"index_v10\",\"json\":\"1\",\"feed_id\":\"1907261237327985813\"\
+        ,\"push_client_id\":\"183e76da7e250009a908de5e2de63a19\",\"client_type\"\
+        :\"android\",\"survey_msg_id\":\"\",\"from\":\"homepage\",\"phone_sn\"\
+        :\"865738037447389\",\"device_id\":\"865738037447389\",\"version\":\"\
+        3.0.0\",\"app_channel\":\"other\",\"pcid\":\"183e76da7e250009a908de5e2de63a19\"\
+        ,\"cookie\":\"{&quot;gender_version&quot;:1,&quot;pro_cate_id&quot;:54,&quot;user_interest&quot;:[]}\"\
+        ,\"ab_ver\":\"B\",\"user_agent\":\"Wood\\/3.0.0(Xiaomi;Xiaomi;Redmi 4X;6.0.1)\
+        \ mdlclient\"};\n\t\tvar eilte_fav_count = 77;\n\t\tvar voice_id = \"\"\
+        ;\n\t\tvar voice_url = \"\";\n\t\tvar voice_pic = \"https://reuel-tolkien.ixiaolu.com/avatar/13191242/11416363091487\"\
+        ;\n\t\tvar voice_time = \"0\";\n\t\tvar elite_title = \"一字一句教你聊天，快速把女孩子聊“嗨”起来\"\
+        ;\n\t\tvar show_new_voice = 0;\n\t\tvar is_hnh = 0;\n\t\tvar is_xiaolu\
+        \ = 1;\n\t\tvar is_frozen = 0;\n\t\tvar elite_is_follow = 0;\n\t\tvar\
+        \ gender_version = 2;\n\t\tvar app_gender_version = \"\";\n\t\tconsole.log(2);\n\
+        \t\tif(!param_get){\n            param_get = {};\n        }\n\t\t// console.log(mentor_user_id,login_user_id,phone_sn,param_get);\n\
+        \t\t// var ml;\n\t\t// setTimeout(function(){\n\t\t// \tm1 = new MaskShare(400);\n\
+        \t\t// },0)\n\t</script>\n\t</body>\n</html>"
+-   eq:
+    - content.css_url
+    - https://valar.ixiaolu.com/h5/hnh/elite/css/style_v11.css?v13
+-   eq:
+    - content.css_version
+    - 237
+-   eq:
+    - content.js_url
+    - https://valar.ixiaolu.com/h5/hnh/elite/js/main_v11.js?v15
+-   eq:
+    - content.js_version
+    - 223
+-   eq:
+    - content.rtn
+    - 0
+-   eq:
+    - content.msg
+    - success
+-   eq:
+    - content.user_agent
+    - Wood/3.0.0(Xiaomi;Xiaomi;Redmi 4X;6.0.1) mdlclient
+-   eq:
+    - content.title
+    - 一字一句教你聊天，快速把女孩子聊“嗨”起来
+-   eq:
+    - content.elite_feed_id
+    - 0
+-   eq:
+    - content.feed_id
+    - '1907261237327985813'
+-   eq:
+    - content.product_id
+    - 0
+-   eq:
+    - content.view_count
+    - 7558
+-   eq:
+    - content.fav_count
+    - 77
+-   eq:
+    - content.like_count
+    - 0
+-   eq:
+    - content.voice_url
+    - ''
+-   eq:
+    - content.total_time
+    - 0
+-   eq:
+    - content.comment_num
+    - 0
+-   eq:
+    - content.summary
+    - 聊天脱单
+-   eq:
+    - content.mini_program_path
+    - /pages/webview/webview?title=一字一句教你聊天，快速把女孩子聊“嗨”起来&login_user_id=0&author=羽翼恋爱学&type=feed&feedId=1907261237327985813&share_from=app&bind_id=mentor-1800212
+-   eq:
+    - content.play_js
+    - ''
+-   eq:
+    - content.is_self_video
+    - false
+-   eq:
+    - content.create_time
+    - '2019-07-26 12:37:32'
+-   eq:
+    - content.feed_video
+    - ''
+-   eq:
+    - content.voice_id
+    - 0
+-   eq:
+    - content.feed_type
+    - 0
+-   eq:
+    - content.is_pre_audit
+    - 0
+-   eq:
+    - content.is_like
+    - 0
+-   eq:
+    - content.feed_image
+    - http://morgoth-aman.ixiaolu.com/elite/1907261237327985813/100008248.jpg
+-   eq:
+    - content.video_url
+    - ''
+-   eq:
+    - content.is_fav
+    - 0
+-   eq:
+    - content.is_anonymous
+    - 0

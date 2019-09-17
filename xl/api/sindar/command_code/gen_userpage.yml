@@ -1,0 +1,32 @@
+
+name: /command_code/gen
+request:
+    headers:
+        user-agent: Wood%2F3.0.1%28Xiaomi%3BXiaomi%3BRedmi+4X%3B6.0.1%29+mdlclient+
+        version: $version
+    method: GET
+    params:
+        ab_ver: $ab_ver
+        app_channel: $app_channel
+        cookie: '{"gender_version":1,"pro_cate_id":2,"user_interest":[]}'
+        device_id: $device_id
+        ext1: ''
+        pcid: $pcid
+        phone_sn: $phone_sn
+        refer_id: '1801097'
+        type: userpage
+        user_agent: $user_agent
+        version: $version
+    url: https://sindar.ixiaolu.com/command_code/gen
+extract:
+    command_code: content.data
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.rtn
+    - 0
+-   eq:
+    - content.data
+    - 【小鹿情感导师：酷爱情感】👍「AABt7iQAAAADp」👎，复制这段文字后打开小鹿情感APP查看导师详细资料~

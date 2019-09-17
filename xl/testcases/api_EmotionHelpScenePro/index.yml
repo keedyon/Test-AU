@@ -1,0 +1,16 @@
+
+- config:
+    name: 第三屏，进入情感求助首页
+    variables:
+        original_password: '111111'
+- test:
+    name: get_checksum
+    api: api/john/account/get_checksum.yml
+
+- test:
+    name: do_login
+    api: api/john/account/login.yml
+
+- test:
+    name: /EmotionHelpScenePro/index
+    api: api/api/EmotionHelpScenePro/index.yml
