@@ -50,21 +50,15 @@ def version():
         {"version":"2.8.0"},
         {"version":"3.0.0"}
     ]
+
 def get_account(num):
     accounts = []
     for index in range(1,num+1):
-        accounts.appned(
-
-
-
-
-
-
-
-
-
-
+        accounts.append(
+            {"account_name":"1880000019%s" % index,"original_password":'111111'},
         )
+
+    return accounts
 
 
 
