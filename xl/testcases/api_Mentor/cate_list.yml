@@ -1,7 +1,0 @@
-- config:
-    name: 咨询师首页，顶部分类列表
-
-
-- test:
-    name: /Mentor/cate_list
-    api: api/api/Mentor/cate_list.yml

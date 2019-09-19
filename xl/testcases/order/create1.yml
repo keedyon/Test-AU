@@ -1,8 +1,0 @@
-
-
-- config:
-    name: 创建订单
-
-- test:
-    name: /order/create
-    api: api/sindar/order/create.yml
